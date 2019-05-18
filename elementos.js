@@ -50,13 +50,41 @@ $(function () {
 
     // Alterando o valor que está dentro de uma tag html 
     // <p> Texto dentro da tag </p>
-    $('li').html('<button>Meu Botão</button>');
+    $('li').html('<button>Meu Botão</button>')
+
+    // Adicionar somente texto sem html
+    $('.url').text("Link de url")
 
     // Pegando o valor
-    console.log($('li').html());
+    console.log($('li').html())
 
     // Adicionando um classe em um elemento 
     $('li').addClass('estilo')
 
+    //Alterando e adicionar valores em inputs com a propriedade val
+    $('#nome').val("Giovanni")
+    console.log($('#nome').val())
 
+    // Inserir atributo antes/após um elemento
+    $('input').before('<p>Before</p>')
+    $('li').prepend('<li>Before</li>')
+    
+    $('input').after('<p>After</p>')
+    $('li').append('<li>Mais um botão</li>');
+
+    // Remove um elemento
+    $('li').remove()
+
+    // Transaformando um elemento em jquery
+    var div = document.getElementById('div');
+    // Dessa forma as propriedades do jquery não funcionariam
+    // pois essa é a sintaxe direta do javascript, para isso
+    // você deve utilizar a sintaxe a seguir
+    $('div')
+
+    // Pegando um elemento pelo index 
+    // * começa sempre do zero
+    $('li').eq(1)
+
+    
 });
