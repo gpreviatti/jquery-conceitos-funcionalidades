@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso JQuery Completo - EFEITOS</title>
+    <title>Curso JQuery Completo - AJAX</title>
     <style>
-        .div{
-            background-color: black;
-            width: 200px;
-            height: 200px;
-            : 
+        .div {
+            height: 150px;
+            width: 150px;
+            background-color:gray;
         }
     </style>
 </head>
 <body>
-    <h1>EFEITOS</h1>
-    <div>
-        <button id="btnToggle"> DIMINUIÇÃO</button>
-        <button id="btnFade"> FADEOUT</button>
-        <button id="btnSlideUp"> SLIDE UP</button>
-        <button id="btnSlideDown"> SLIDE DOWN</button>
-        <button id="btnSlideToggle"> SLIDE UP/DOWN TOGGLE</button>
-        <br>
-        <br>
-        <button id="btnAnimate">ANIMATE</button>
-        <button id="btnStopAnimate">STOP ANIMATE</button>
-        <button id="btnSumAnimate">SUM ANIMATE</button>
-        
-    </div>
+    <h1>AJAX</h1>
+
+    <div class="div"></div>
     <br>
-    <div class="div">
+    <button id="acao">Botão</button>
+    <hr>
+    <div class="">
+        SEREALIZAÇÃO
+        <form action="" method="get" id="formulario-serializacao">
+            <input type="text" name="name" placeholder="nome">
+            <input type="text" name="pwd" placeholder="senha">
+            <button type="submit">Entrar</button>
+        </form>
     </div>
-    
+    <hr>
+    <div>
+        <form method="get" id="formSoma">
+            SOMA
+            <input type="text" name="x" placeholder="numero 1">
+            <input type="text" name="y" placeholder="numero 2">
+            <button type="submit">Somar</button>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <form method="get" id="formJson">
+            JSON
+            <input type="text" name="name" placeholder="nome">
+            <input type="text" name="pwd" placeholder="senha">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
     <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="efeitos.js" type="text/javascript"></script>
+    <script src="ajax.js" type="text/javascript"></script>
 </body>
 
 </html>
